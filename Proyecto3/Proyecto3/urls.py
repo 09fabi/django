@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Proyecto3App.views import saludo
+from Proyecto3App.views import renderTemplate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludo/', saludo),
+    path('render/', renderTemplate)
 ]
